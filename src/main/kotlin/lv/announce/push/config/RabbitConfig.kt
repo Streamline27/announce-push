@@ -8,7 +8,7 @@ import org.springframework.amqp.rabbit.core.RabbitAdmin
 
 
 @Configuration
-class RabbitConfig(val properties: RabbitProperties) {
+class RabbitConfig(val properties: PushProperties) {
 
     @Bean
     fun rabbitAdmin(connectionFactory: ConnectionFactory) =

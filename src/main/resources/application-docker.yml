@@ -2,12 +2,14 @@ server:
   tomcat:
     accesslog:
      enabled: true
-     prefix: weathertask
+     prefix: push
      rename-on-rotate: true
      directory: /logs
 spring:
   profiles:
     active: docker
+  application:
+    name: ${INSTANCE_NAME}
 spring:
   rabbitmq:
     addresses: ${RABBIT_ADDRESSES}

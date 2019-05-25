@@ -5,6 +5,8 @@ server:
 spring:
   profiles:
     active: local
+  application:
+    name: push
 
 push:
   rabbit:
