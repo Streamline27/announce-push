@@ -1,6 +1,5 @@
 package lv.announce.push
 
-import lv.announce.push.config.PushProperties
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
